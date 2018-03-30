@@ -200,7 +200,26 @@
 }
 
 @media only screen and (max-width : 620px){
-
+	.calculator-shape h3 {
+		font-size: 1.5em;
+		text-align: center;
+		padding-left: 0;
+		padding-top: 30px;
+	}
+	.calculator-block h4 {
+		font-size: 1.25em;
+		text-align: center;
+	}
+	.shape-block-input-wrap {
+		margin: 0 auto;
+	}
+	.shape-block-sq {
+		margin: 0 auto;
+		padding-top: 25px;
+	}
+	.sq-vision {
+		font-size: 0.8em;
+	}
 }
 
 @media only screen and (max-width : 600px) {
@@ -333,6 +352,22 @@
 	}
 	.select-shape-list .select-shape {
 		width: 65vw;
+	}
+	.shape-block-sq {
+		width: 100%;
+	}
+	.input-inches {
+		width: 100%;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		margin-bottom: 25px;
+	}
+	.calculator-block .shape-block-img img {
+		max-width: 90%;
+	}
+	.shape-block-input {
+		width: 100%;
 	}
 }
 

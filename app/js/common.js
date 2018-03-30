@@ -109,7 +109,7 @@ $(document).ready(function () {
         var shape = $(this).parent().parent();
         var shape_id = shape.attr('id');
         $('.close_' + shape_id).removeClass('active');
-        shape.find('.input-inches input').val('0');
+        shape.find('.input-inches input').val('');
         shape.find('.sq-feet').text('0.00');
         shape.hide();
         calc();
