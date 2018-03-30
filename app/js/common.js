@@ -8,13 +8,14 @@ $(document).ready(function () {
         $('.main-page-vision').css('display','none');
     }
 
-    ///* sink block width */
-    ////$this = $('.sink-block').find('img');
-    //if ($('.sink-img').length > 0) {
-    //    $(this).css('','blue')
-    //} else {
-    //    $(this).css('background','blue')
-    //}
+    /* Sink blocks */
+    function widthSinkBlock(){
+        $('.sink-block').each(function () {
+            var count = $(this).find('.sink-img').length;
+            (count==2)?$(this).css({width:'100%'}):$(this).css({width:'50%'});
+        });
+    }
+    widthSinkBlock();
 });
 
 /* smooth-scrolling */

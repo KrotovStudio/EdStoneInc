@@ -635,6 +635,7 @@ footer .main-page .footer__offer p {
   line-height: 33px;
   background-color: #ffcc00;
   border: none;
+  white-space: nowrap;
   text-transform: uppercase;
   border-radius: 33px;
   -webkit-border-radius: 33px;
@@ -822,6 +823,7 @@ footer .main-page .footer__offer p {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 #filters li span.active, #filters li span:hover {
@@ -935,6 +937,9 @@ footer .main-page .footer__offer p {
   justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .sink-list-wrap .sink-block {
@@ -1259,6 +1264,9 @@ form input[type='submit'] {
 
 .select-shape .select-shape-img img {
   padding: 15px;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .calculator-shape-block {

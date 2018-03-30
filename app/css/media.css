@@ -1,17 +1,146 @@
 /*==========  Desktop First Method  ==========*/
 
+.header__navigation{
+	display: none;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
 }
 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1025px) {
+	.order-txt p, .order-txt a {
+		font-size: 2em;
+	}
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.contact-block p {
+		font-size: 1.2em;
+	}
+	.offer-phone{
+		text-align: right;
+	}
+	.section-call a {
+		font-size: 3em;
+	}
+	.footer__nav nav a, .header__nav nav a {
+		font-size: 1.325em;
+	}
+	.contact-map {
+		max-width: 50%;
+	}
+	.faq-questions-wrap .faq-questions {
+		padding: 0 5px;
+		box-sizing: border-box;
+	}
+}
 
+@media only screen and (max-width : 935px) {
+	.offer-txt{
+		width: 65%;
+	}
+	.section-call a {
+		font-size: 2.5em;
+	}
+	.order-txt a {
+		white-space: nowrap;
+	}
+	.order-txt{
+		padding: 19px;
+	}
+	.footer__nav nav a, .header__nav nav a {
+		font-size: 1.125em;
+	}
+	.footer__nav nav a.calc {
+		font-size: 1em;
+	}
+	.section-call p {
+		font-size: 1.3em;
+	}
+	.offer-phone{
+		text-align: center;
+	}
+	.footer__navigation {
+		padding-left: 0;
+	}
+	#filters li span {
+		font-size: 1.3em;
+		padding: 7px 18px;
+	}
+	.shape-block-input-wrap{
+		margin-left: 10px;
+	}
+
+}
+
+@media only screen and (max-width : 840px){
+	.shape-block-input-wrap{
+		margin-left: 0px;
+	}
+	.calculator-block {
+		flex-wrap: wrap;
+	}
+	.calculator-block .shape-block-img {
+		width: 100%;
+		max-width: 100%;
+	}
+	.calculator-block .shape-block-img img {
+		max-width: 50%;
+		height: auto;
+		margin-bottom: 35px;
+	}
+	.calculator-shape {
+		padding: 44px 25px 40px 25px;
+	}
+	.btn-sq {
+		padding: 5px 16px;
+	}
+	.calculator-page .shape-calc-txt p.dop, .calculator-page .page-h2 h2 {
+		font-size: 2.5em;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.bg-page {
+		background-size: contain;
+	}
+	.page-h2 .h2 {
+		font-size: 3em;
+	}
+	.contact-block-wrap {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.contact-block-wrap > div{
+		width: 100%;
+		max-width: 708px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.contact-map{
+		margin-top: 54px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.contact-block p {
+		font-size: 1.5em;
+	}
+	.footer__nav{
+		display: none;
+	}
+	.sink-h3 h3 {
+		font-size: 1.6em;
+	}
+	.sink-wrap {
+		padding-bottom: 0;
+	}
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -35,16 +164,206 @@
 		animation: none !important;
 	}
 
+	#filters {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		overflow: scroll;
+	}
+	.sink-decor h3 br,
+	.calculator-page .page-h2 h2 br{
+		display: none;
+	}
+	.select-shape {
+		width: 33%;
+	}
+
+}
+
+@media only screen and (max-width : 680px) {
+	.socials img{
+		width: 70%;
+	}
+	.order-txt p{
+		font-size: 1.5em;
+	}
+	.faq-questions-wrap{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.faq-questions-wrap .faq-questions {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width : 620px){
+
+}
+
+@media only screen and (max-width : 600px) {
+	.footer__main-wrap{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.socials-wrap{
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.socials img{
+		width: 100%;
+	}
+	.footer__socials{
+		padding-top: 20px;
+	}
+	.order-txt p, .order-txt a {
+		font-size: 1.125em;
+		text-align: center;
+	}
+	.section-call .container,
+	.order-txt{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.order-txt a {
+		padding: 8px 26px;
+		margin-top: 10px;
+	}
+	.section-call p {
+		font-size: 1.125em;
+		padding: 0;
+	}
+	.section-call a {
+		font-size: 2.25em;
+	}
+	.section-call .container > div {
+		width: 100%;
+		max-width: 368px;
+		text-align: center;
+	}
+	.offer-phone {
+		padding-top: 10px;
+	}
+	.sink-list-wrap .sink-block {
+		width: 48%;
+	}
+	.calculator-page .shape-calc-txt p.dop, .calculator-page .page-h2 h2 {
+		font-size: 1.875em;
+	}
+	.shape-calc-txt h3, .sink-decor h3 {
+		font-size: 1.125em;
+	}
+	.sink-decor-descr p {
+		font-size: 1em;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	form .input {
+		width: 100%;
+	}
+	.contact-block p {
+		font-size: 1.25em;
+	}
+	.faq-page .page-h2 h2,
+	.page-h2 .h2 {
+		font-size: 1.875em;
+	}
+	.page-h2 {
+		padding-top: 100px;
+	}
+	.bread-wrap .container .bread {
+		top: 30px;
+	}
+	.popup-message .popup-form p {
+		font-size: 1.25em;
+	}
+	.popup-message .popup-form {
+		padding: 36px 30px 50px;
+	}
+	.faq-questions-wrap {
+		padding-bottom: 30px;
+	}
+	.sink-list-wrap .sink-block img{
+		width: 85%;
+	}
+	.shape-calc-txt .sink-decor-descr p, .sink-decor .sink-decor-descr p {
+		padding: 33px 40px;
+	}
+	.shape-calc-txt h3, .sink-decor h3 {
+		font-size: 1.125em;
+	}
+	.sink-h3 h3 {
+		font-size: 1.2em;
+	}
+	.select-shape {
+		width: 50%;
+	}
+	.select-shape-list {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		overflow: scroll;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+	.select-shape .select-shape-img{
+		width: 60vw;
+	}
+	.select-shape .select-shape-img img {
+		width: 100%;
+	}
+	.select-shape-list .select-shape {
+		width: 65vw;
+	}
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 380px) {
+	.footer__contacts {
+		padding-left: 6px;
+	}
+	.sink-block,
+	.sink-img{
+		width: 100% !important;
+	}
+	.sink-img-block{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.sink-h3 h3 {
+		font-size: 1.4em;
+	}
+	#portfoliolist .portfolio {
+		width: 100%;
+	}
+	.portfolio img {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#filters li span {
+		font-size: 1em;
+	}
 }
 
 

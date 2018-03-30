@@ -319,6 +319,7 @@ footer
   line-height: 33px
   background-color: $color_yellow
   border: none
+  white-space: nowrap
   text-transform: uppercase
   @include b-radius(33px)
   @include btn(5px, 28px)
@@ -429,6 +430,7 @@ footer
   li span
     color: $color_dop_main
     transition: 0.3s
+    white-space: nowrap
     &.active,
     &:hover
       background: $color_yellow
@@ -498,6 +500,7 @@ footer
   display: flex
   justify-content: space-around
   flex-wrap: wrap
+  align-items: flex-end
   .sink-block
     text-align: center
     width: 30%
@@ -698,6 +701,8 @@ form
       transition: 0.3s
     img
       padding: 15px
+      max-width: 100%
+      box-sizing: border-box
 
 .calculator-shape-block
   @include b-radius(10px)

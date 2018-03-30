@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <!--<link rel="stylesheet" href="css/smooth-scroll.css">-->
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/img/favicon/16.png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css">
     <link rel="stylesheet" href="libs/smooth-div-scroll/css/smoothDivScroll.css">
     <link rel="stylesheet" href="libs/mixitup/css/layout.css">
@@ -26,12 +31,12 @@
             <div class="header__navigation">
                 <div class="header__nav">
                     <nav>
-                        <a class="calc" href="#">Calculator</a>
-                        <a href="#">sinks</a>
-                        <a href="#">edges</a>
-                        <a href="#">Gallery</a>
-                        <a href="#">faq</a>
-                        <a href="#">contacts</a>
+                        <a class="calc" href="calculator.html">Calculator</a>
+                        <a href="sink.html">sinks</a>
+                        <a href="edges.html">edges</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="faq.html">faq</a>
+                        <a href="contacts.html">contacts</a>
                     </nav>
                 </div>
 
@@ -65,7 +70,7 @@
                     </div>
 
                     <div class="btn">
-                        <a class="btn-order" href="#">ORDER NOW</a>
+                        <a class="btn-order popup-with-form" href="#popup-form">ORDER NOW</a>
                     </div>
                 </div>
 
@@ -966,7 +971,6 @@
 <!--   ~~~~~~    END CONTENT    ~~~~~     -->
 
 <!--Footer-->
-<!--Footer-->
 <footer>
 
     <!-- Offer WRAP-->
@@ -997,7 +1001,7 @@
             <div class="order-txt-wrap">
                 <div class="order-txt">
                     <p>Your Source for Natural Stone</p>
-                    <a href="#">Order now</a>
+                    <a class="popup-with-form" href="#popup-form">Order now</a>
                 </div>
             </div>
         </div>
@@ -1053,6 +1057,39 @@
     </div>
 
 </footer>
+
+<!-- !!!!!!!!!       MAGNIFIC POPUP MODAL      !!!!!!!!!!!  -->
+
+<!--ORDER NOW POPUP-->
+<div id="popup-form" class="modal-form popup-wrap popup-message white-popup-block mfp-hide">
+    <div class="popup-form">
+        <h2>Order</h2>
+        <p>Leave your details and our managers will contact you</p>
+
+        <form>
+            <span>Name</span>
+            <input type="text" required>
+            <span>Phone number</span>
+            <input type="tel" required>
+
+            <div class="btn">
+                <input class="btn-submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Popup Good-->
+<div id="popup-form-good" class="modal popup-wrap popup-message white-popup-block mfp-hide">
+    <div class="popup-form">
+        <div class="popup-form-img">
+            <img src="img/like.png" alt="like">
+        </div>
+        <h3>Ваша заявка принята!</h3>
+        <p>Спасибо, Ваша заявка принята</p>
+        <p>Наши специалисты свяжутся с Вами в ближайшее время!</p>
+    </div>
+</div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="libs/smooth-div-scroll/js/jquery-ui-1.8.23.custom.min.js"></script>
