@@ -45,6 +45,7 @@ $('.image-popup').magnificPopup({
     }
 });
 
+/* popup form */
 $(document).ready(function() {
     $('.popup-with-form').magnificPopup({
         type: 'inline',
@@ -62,6 +63,19 @@ $(document).ready(function() {
                 }
             }
         }
+    });
+});
+
+/* close / open mobile menu */
+$(document).ready(function() {
+    var menu =  $('.nav-main');
+    $('.mob-btn').on('click', function(){
+        menu.addClass('active')
+    });
+
+    var close = $('.close-nav');
+    $(close).on('click', function(){
+        menu.removeClass('active')
     });
 });
 

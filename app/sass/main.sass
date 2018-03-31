@@ -34,7 +34,6 @@
     width: 100%
     height: 307px
     bottom: -77px
-    left: 15px
     z-index: 3
 .main-block
   display: flex
@@ -82,7 +81,8 @@
       font-weight: 900
     span > span
       color: $color_yellow
-
+.mobile_btn
+  display: none
 
 .footer__nav,
 .header__nav
@@ -105,6 +105,53 @@
         @include b-radius(27px)
         color: $color_yellow
         opacity: 1
+  &.active
+    display: block
+    position: fixed
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background: blanchedalmond
+    top: 0
+    z-index: 5
+    background-color: rgba($color_dop_main, 0.9)
+    .close-nav
+      content: ''
+      background-image: url("../img/close.svg")
+      background-position: center
+      background-repeat: no-repeat
+      position: absolute
+      width: 20px
+      height: 20px
+      top: 30px
+      right: 30px
+      cursor: pointer
+    nav
+      flex-direction: column
+      align-items: flex-end
+      padding-top: 100px
+      padding-right: 50px
+      a
+        font-size: 2.25em
+        margin: 15px 0
+        &.calc
+          position: relative
+          right: -22px
+.mob_socials
+  display: none
+.mobile_btn
+  nav
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: flex-end
+.mob-btn
+  background-image: url("../img/menu-btn.svg")
+  width: 27px
+  height: 24px
+  object-fit: contain
+  cursor: pointer
+  margin-left: 30px
 
 .footer__nav nav a
   font-size: 1.375em

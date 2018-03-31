@@ -177,7 +177,6 @@ h2, .h2 {
   width: 100%;
   height: 307px;
   bottom: -77px;
-  left: 15px;
   z-index: 3;
 }
 
@@ -249,6 +248,10 @@ h2, .h2 {
   color: #ffcc00;
 }
 
+.mobile_btn {
+  display: none;
+}
+
 .footer__nav nav,
 .header__nav nav {
   display: -webkit-box;
@@ -290,6 +293,79 @@ h2, .h2 {
   -webkit-border-radius: 27px;
   color: #ffcc00;
   opacity: 1;
+}
+
+.footer__nav.active,
+.header__nav.active {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: blanchedalmond;
+  top: 0;
+  z-index: 5;
+  background-color: rgba(98, 10, 8, 0.9);
+}
+
+.footer__nav.active .close-nav,
+.header__nav.active .close-nav {
+  content: '';
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.footer__nav.active nav,
+.header__nav.active nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+.footer__nav.active nav a,
+.header__nav.active nav a {
+  font-size: 2.25em;
+  margin: 15px 0;
+}
+
+.footer__nav.active nav a.calc,
+.header__nav.active nav a.calc {
+  position: relative;
+  right: -22px;
+}
+
+.mob_socials {
+  display: none;
+}
+
+.mobile_btn nav {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.mob-btn {
+  background-image: url("../img/menu-btn.svg");
+  width: 27px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: pointer;
+  margin-left: 30px;
 }
 
 .footer__nav nav a {
